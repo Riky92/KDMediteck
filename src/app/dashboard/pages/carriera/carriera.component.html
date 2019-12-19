@@ -1,0 +1,85 @@
+<!-- <div class="header"> -->
+	<div class="main">
+		<div class="header">
+			<div class="containerLogo">
+					<span class="cursor" (click)="goToDashboard()">KD Mediteck</span>
+			</div>
+			<div class="menu">
+				<ng-container *ngFor="let item of user.canaliDiContatto">
+					<div class="menuItem">
+						<a style="color: #fff" href="{{item.link}}">{{item.descrizione}}</a>
+					</div>
+				</ng-container>
+			</div>
+		</div>
+		<div class="infoUser">
+			<div class="rowUser">
+				<div class="item">
+						<img src="assets/images/{{user.foto}}.png" class="fotoUser">
+				</div>
+				<div class="itemUser">
+						<h1 class="title">{{user.nome}}</h1>
+						<br>
+						<h2 class="subtitle">{{user.mansione}}</h2>
+				</div>
+			</div>
+			<div class="rowUser principaliSX">
+				<div class="item" style="display: block">
+						<div class="rowUser">
+								<div class="anagraficaUser">
+										<i class="birthday"></i>
+								</div>
+								<div class="anagraficaUser info">
+										<span class="subtitle" style="font-style:initial"> {{user.birthday}}</span>
+								</div>
+						</div>
+					<div class="rowUser">
+							<div class="anagraficaUser">
+									<i class="maps"></i>
+							</div>
+							<div class="anagraficaUser info">
+									<span class="subtitle" style="font-style:initial"> {{user.citta_natale}}</span>
+							</div>
+					</div>
+					<div class="rowUser">
+							<div class="anagraficaUser">
+									<i class="home"></i>
+							</div>
+							<div class="anagraficaUser info">
+									<span class="subtitle" style="font-style:initial"> {{user.citta_attuale}}</span>
+							</div>
+					</div>
+					<div class="rowUser">
+							<div class="anagraficaUser">
+									<i class="mail"></i>
+							</div>
+							<div class="anagraficaUser info">
+									<span class="subtitle email" (click)="openMail(user.mail)" style="font-style:initial"> {{user.email}}</span>
+							</div>
+					</div>
+				</div>
+				<!-- <div class="item">
+					</div> -->
+			</div>
+			<div class="rowUser principaliDX">
+				<div class="anagraficaUser">
+					<i class="globe" style="margin-top: 10px;"></i>
+				</div>
+				<div class="anagraficaUser info">
+					<ng-container *ngFor="let language of user.lenguages">
+						<i class="{{language.foto}}"></i>
+					</ng-container>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<div class="containerHeader">
+		<div style="display: flex">
+				<div class="square first"></div>
+				<div class="square second"></div>
+				<div class="square third"></div>
+		</div>
+	</div>
+<!-- </div> -->
+<app-carriera-info [user]="user"></app-carriera-info>

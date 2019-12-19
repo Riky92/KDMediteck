@@ -1,0 +1,97 @@
+
+.main{
+	max-width: 75%;
+	@media only screen and (max-width: 375px) {
+		max-width: 100%;
+		margin-top: -70px;
+	}
+	margin-left: auto;
+	justify-content: center;
+	margin-right: auto;
+	.container{
+		@media only screen and (max-width: 375px) {
+			padding: 5px;
+			padding-right: 10px;
+		}
+		padding: 20px;
+		.title{
+			font-weight: bold;
+			color: #24b47e;
+			margin-top: 20px;
+			margin-bottom: 20px;
+			@media only screen and (max-width: 375px) {
+				margin-top: 10px;
+				font-size: 16px;
+			}
+			font-size: 20px;
+		}
+		.body{
+			@media only screen and (max-width: 375px) {
+				font-size: 14px;
+			line-height: 24px;
+			padding-bottom: 0;
+			padding-top: 0;
+			}
+			font-weight: 400;
+    	font-size: 17px;
+    	line-height: 28px;
+			color: #525f7f;
+
+		}
+		.subsection{
+			color: #525f7f;
+			margin-top: 15px;
+			margin-bottom: 15px;
+			font-size: 18px;
+			@media only screen and (max-width: 375px) {
+				margin-top: 10px;
+				margin-bottom: 10px;
+				font-size: 15px;
+			}
+			font-weight: bold;
+		}
+	}
+}
+
+.black{
+	font-weight: bold;
+}
+
+.green{
+	font-weight: bold;
+	color: #008000;
+}
+
+.orange{
+	font-weight: bold;
+	color:	#ffc100;
+}
+
+.red{
+	font-weight: bold;
+	color: #FF0000
+}
+
+.blue{
+	font-weight: bold;
+	color: #339AEF;
+}
+
+.rowInfo{
+	display: inline-flex;
+	margin-top: 20px;
+	width: 100%;
+	.flex1{
+		flex: 1;
+	}
+	.flex3{
+		flex: 3;
+	}
+}
+
+.containerButton{
+	margin-top: 20px;
+	width: 100%;
+	text-align: center;
+
+}

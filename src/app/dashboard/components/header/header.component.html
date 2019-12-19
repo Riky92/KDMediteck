@@ -1,0 +1,31 @@
+	<div class="main">
+			<div class="header">
+				<div class="containerLogo">
+					<span>KD Mediteck</span>
+				</div>
+				<div class="menu">
+					<ng-container *ngFor="let item of items">
+						<div class="item" (click)="clickItem(item)" [ngClass]="{'active': item.key === itemActive}">{{item.descrizione}}</div>
+					</ng-container>
+				</div>
+		</div>
+		<div class="intro">
+			<div class="containerIntro">
+					<h1 class="title">Studio soluzioni per Medical Devices</h1>
+					<br>
+					<h2 class="subtitle">“È la capacità di innovare che distingue un leader da un epigono.”<br>
+					Cit. Steve Jobs</h2>
+			</div>
+			<div class="containerPhoto">
+				<img class="photo" src="assets/images/technology.png">
+			</div>
+		</div>
+	</div>
+	<div class="containerHeader">
+		<div style="display: flex">
+				<div class="square first"></div>
+				<div class="square second"></div>
+				<div class="square third"></div>
+		</div>
+	</div>
+

@@ -1,0 +1,133 @@
+<section>
+	<div class="main">
+		<div id="about_us" class="container">
+			<h1 class="title">CHI SIAMO</h1>
+			<p class="body">
+				KD Mediteck è una futura Startup, il cui obiettivo è quello di sviluppare dispositivi medici che migliorino
+				qualità di vita delle persone e l'attività lavorativa del professionista sanitario.
+			</p>
+		</div>
+		<div id="kidney" class="container">
+				<h1 class="title">KIDNEY DOSE</h1>
+				<p class="body">
+					KidneyDose è un applicazione che supporta il medico nella scelta del giusto dosaggio farmacologico da somministrare al paziente con uno stato di  <span style="font-weight: bold">insufficienza renale.</span>
+					Il rene è il principale organo deputato alla eliminazione dei farmaci. Se il rene ha una riduzione della sua funzionalità si riduce parallelalemente l'eliminazione dei farmaci assunti, causando effetti collaterali.
+					Per conoscere il dosaggio farmacologico di un principio attivo da somministrare ai pazienti con insufficienza renale, il medico deve controllare prontuari o linee guida con conseguente dispendio di tempo.<br>
+					Il fine di KidneyDose è quello di fornire il giusto dosaggio farmacologico da somministrare a questo tipo di pazienti in brevissimo tempo: basta selezionare il principio attivo che si vuole somministrare, inserire o calcolare la velocità
+					di filtrazione glomerulare (VFG, parametro che rappresenta la funzinalità renale) e calcolare così la dose.<br>
+					<!-- Per individuare insufficienza renale il medico fa riferimento al valore di <span style="font-weight: bold">Clearence Creatinina (o VFG).</span>
+					Tale parametro, combinato assieme al <span style="font-weight: bold">principio attivo </span> scelto dal medico stesso, permette di determinare
+					la giusta dose da somministrare al paziente, monitorando anche eventuali sessioni di dialisi. -->
+					Andiamo ad analizzare nello specifico le funzionalità che dispone KidneyDose.</p>
+					<br>
+					<div class="subsection">Calcolo VFG</div>
+
+					<p class="body">La velocità di filtrazione glomerulare (VFG) è l'indicatore più utilizzato per valutare lo stato di insufficienza renale. Ha convenzionalmente un valore compreso tra 0 e 125 ml/min.
+						KidneyDose permette al medico di poter scegliere di inserire il valore, nel caso in cui risulti già disponibile dalle analisi del paziente,
+						oppure di calcolarlo attraverso le formule di Cockgroft-Gault e MDRD. Anche in questo caso il medico può scegliere quale formula utilizzare anche in base alle caratteristiche
+						del paziente.</p>
+					<br>
+					<div class="subsection">Calcolo dosaggio</div>
+
+					<div class="body">
+							Una volta ricavato il valore di VFG (0 - 125 ml/min) e inserito il principio attivo è possibile calcolare la dose da somministrare al paziente.
+							Il messaggio relativo al dosaggio può essere di quattro tipi:
+						<br>
+						<br>
+						1) <span class="green">Nessuna riduzione del dosaggio:</span> somministrare il dosaggio in maniera normale
+						<br>
+						<br>
+						2) <span class="orange">Riduzione del dosaggio:</span> somministrare il principio attivo con il messaggio di riduzione indicato
+						<br>
+						<br>
+						3) <span class="red">Controindicazione: </span> contrindicato l'utilizzo del principio attivo.
+						<br>
+						<br>
+						4) <span class="blue">Dialisi: </span> se presente mostra il messaggio relativo al paziente in dialisi.
+						<br>
+						<br>
+						Sotto il messaggio del dosaggio calcolato, è disponibile una barra dinamica con il valore del VFG del paziente, i valori vanno da 0 a 125 e spostando il cursore è possibile vedere
+						come cambiano i messaggi relativi al dosaggio per quel determinato principio attivo. Ciò è utile per poter meglio calibrare la scelta del giusto dosaggio sulle basi delle condizioni
+						cliniche del paziente.
+						<br>
+						I dati relativi al dosaggio sono stati raccolti sulle base delle linee guida internazionale e l'applicazione non sostituisce il medico ma lo supporta nella scelta del giusto dosaggio farmacologico.
+
+					</div>
+
+					<div class="subsection">Principi attivi</div>
+
+					<div class="body">
+						I principi attivi sono la base verso la scelta del farmaco da somministrare, il medico ha la completa libertà di poter scegliere quale principio attivo utilizzare.
+						 Accedendo a dettaglio di ognuno di essi vengono determinate informazioni in maniera statica sugli intervalli di riduzione per valore di VFG.
+					</div>
+
+					<div class="subsection">Cartella clinica</div>
+
+					<div class="body">
+						Una delle funzionalità più interessanti che offre KidneyDose è sicuramente la cartella clinica. Una volta trovato il giusto dosaggio farmacologico il
+						sistema permette di memorizzare i dati del paziente salvando in particolare messaggio di riduzione, principio attivo usato, valore di VFG. Il medico cosi
+						può avere sotto mano tutti i pazienti in analisi simulando il vero e proprio comportamento di una cartella clinica.<br>
+						Accedendoci troviamo tutti i pazienti tenuti in osservazione, cliccando sul singolo paziente è possibile vedere in dettaglio troviamo le informazioni relative al calcolo di dosaggio. All'interno della sezione
+						è possibile modificare le informazioni cambiando dinamicamente VFG e principio attivo ( cambiando di conseguenza il messaggio di riduzione).
+						Questo aspetto permette al medico di avere un'analisi a 360 gradi, dando varie possibilità del dosaggio sulla base delle condizioni cliniche del paziente.
+					</div>
+
+					<!-- <div class="subsection">Preferiti e Cronologia</div>
+
+					<div class="body">
+						KidneyDose offre inoltre due funzionalità che permettono di essere utili al medico per svolgere analisi: Preferiti e Cronologia.
+						Tramite la prima il medico può determinare una lista di principi attivi 'preferiti', mentre tramite la seconda vengono monitorati
+						i principi attivi scelti dopo ogni sessione di analisi. Entrambe hanno la capacità di poter vedere quali sono i principi attivi
+						maggior utilizzati dal medico stesso.
+					</div> -->
+			</div>
+			<div id="contacts" class="container">
+				<h1 class="title">CONTATTI</h1>
+				<div class="body">
+					<div class="Card">
+						<div *ngFor="let user of users" class="BoxSoggetto">
+							<div class="rowInfo">
+								<ngx-avatar size="60" src="assets/images/{{user.foto}}.png"></ngx-avatar>
+								<span class="CardTitle" style="margin-left: 50px">{{user.nome}}</span>
+							</div>
+							<div class="rowInfo">
+								<div class="flex1">
+									<i class="work"></i>
+								</div>
+								<div class="flex3">
+										<span class="CardItem padd-t-0">{{user.area}}</span>
+								</div>
+							</div>
+							<div class="rowInfo">
+								<div class="flex1">
+										<i class="birthday"></i>
+								</div>
+								<div class="flex3">
+									<span class="CardItem padd-t-0">{{user.birthday}}</span>
+								</div>
+							</div>
+							<div class="rowInfo">
+									<div class="flex1">
+											<i class="degree"></i>
+									</div>
+									<div class="flex3">
+											<span class="CardItem padd-t-0">{{user.degree}}</span>
+									</div>
+							</div>
+							<div class="rowInfo">
+								<div class="flex1">
+										<i class="mail"></i>
+								</div>
+								<div class="flex3">
+										<span class="CardItem email padd-t-0" (click)="openMail(user.email)">{{user.email}}</span>
+								</div>
+							</div>
+							<div class="containerButton">
+								<button class="Button" (click)="visualizzaCarriera(user)">VISUALIZZA CARRIERA</button>
+							</div>
+						</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

@@ -1,1 +1,272 @@
 /* You can add global styles to this file, and also import other style files */
+
+html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+@media only screen and (max-width: 375px) {
+  body {
+	 font-size: 12px;
+	 width: 100%;
+  }
+}
+
+body {
+  font-family: 'Open Sans';
+  font-size: 14px;
+  color: #474D58;
+  background-color: #FAFAFA;
+}
+
+.Card {
+	@media only screen and (max-width: 375px) {
+		padding: 5px;
+		font-size: 12px;
+	}
+	padding: 10px 30px;
+	background: linear-gradient(150deg, #53f 15%, #05d5ff 70%, #a6ffcb 94%);;
+	//overflow: hidden;
+	border-radius: 5px;
+	position: relative;
+	margin-bottom: 40px;
+	width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+	.BoxSoggetto {
+		// background: #FFFFFF;
+		border: 2px solid #FAFAFA;
+		border-radius: 3px;
+		padding: 10px;
+		padding-bottom: 15px;
+		margin-right: 5px;
+		margin-bottom: 20px;
+		@media only screen and (max-width: 375px) {
+			width: 98%;
+		}
+		@media only screen and (max-width: 930px) {
+			width: 98%;
+		}
+		width: 48%;
+		.CardTitle {
+			font-weight: bold;
+			font-size: 16px;
+			@media only screen and (max-width: 375px) {
+				font-size: 14px;
+			}
+			color: white;
+			padding-bottom: 13px;
+			padding-top: 20px;
+			margin-bottom: 20px;
+			text-transform: uppercase;
+		}
+		.CardItem{
+			font-size: 14px;
+			@media only screen and (max-width: 375px) {
+				font-size: 12px;
+			}
+			color: white;
+			padding-top: 20px;
+			margin-bottom: 20px;
+			font-weight: 700;
+			&.email{
+				text-decoration: underline;
+				cursor: pointer;
+			}
+		}
+	}
+}
+
+.work {
+  background: url('assets/images/work.svg');
+  height: 24px;
+	width: 24px;
+	@media only screen and (max-width: 375px) {
+		background-size: 80%
+	}
+	background-repeat: no-repeat;
+	display: block;
+
+}
+
+.birthday{
+	background: url('assets/images/cake.svg');
+  height: 24px;
+	width: 24px;
+	@media only screen and (max-width: 375px) {
+		background-size: 80%
+	}
+	background-repeat: no-repeat;
+	display: block;
+}
+
+.degree{
+	background: url('assets/images/degree.svg');
+  height: 24px;
+	width: 24px;
+	@media only screen and (max-width: 375px) {
+		background-size: 80%
+	}
+	background-repeat: no-repeat;
+	display: block;
+}
+
+.home{
+	background: url('assets/images/home.svg');
+  height: 24px;
+	width: 24px;
+	@media only screen and (max-width: 375px) {
+		background-size: 80%
+	}
+	background-repeat: no-repeat;
+	display: block;
+}
+
+.mail{
+	background: url('assets/images/mail.svg');
+  height: 24px;
+	width: 24px;
+	@media only screen and (max-width: 375px) {
+		background-size: 80%
+	}
+	background-repeat: no-repeat;
+	display: block;
+}
+
+.maps{
+	background: url('assets/images/map.svg');
+  height: 24px;
+	width: 24px;
+	@media only screen and (max-width: 375px) {
+		background-size: 80%
+	}
+	background-repeat: no-repeat;
+	display: block;
+}
+
+.globe{
+	background: url('assets/images/globe.svg');
+  height: 24px;
+	width: 24px;
+	@media only screen and (max-width: 375px) {
+		background-size: 80%
+	}
+	background-repeat: no-repeat;
+	display: block;
+}
+
+.italy{
+	background: url('assets/images/italy.png');
+	background-size: 100%;
+	height: 40px;
+	width: 40px;
+	@media only screen and (max-width: 375px) {
+		background-size: 60%;
+    margin-top: 5px;
+    margin-right: 0px;
+    margin-left: 10px;
+	}
+	margin-right: 15px;
+	background-repeat: no-repeat;
+	display: block;
+}
+
+.england{
+	background: url('assets/images/england.png');
+	background-size: 100%;
+	height: 40px;
+	width: 40px;
+	@media only screen and (max-width: 375px) {
+		background-size: 60%;
+    margin-top: 5px;
+    margin-right: 0px;
+    // margin-left: 10px;
+	}
+	margin-right: 15px;
+	background-repeat: no-repeat;
+	display: block;
+}
+
+.spain{
+	background: url('assets/images/spanish.png');
+	background-size: 100%;
+	height: 40px;
+	width: 40px;
+	@media only screen and (max-width: 375px) {
+		background-size: 60%;
+    margin-top: 5px;
+    margin-right: 0px;
+    // margin-left: 10px;
+	}
+	background-repeat: no-repeat;
+	margin-right: 15px;
+	display: block;
+}
+
+.germany{
+	background: url('assets/images/german.png');
+	background-size: 100%;
+	height: 40px;
+	width: 40px;
+	@media only screen and (max-width: 375px) {
+		background-size: 60%;
+    margin-top: 5px;
+    margin-right: 0px;
+    // margin-left: 10px;
+	}
+	background-repeat: no-repeat;
+	margin-right: 15px;
+	display: block;
+}
+
+
+
+.padd-t-0{
+	padding-top: 0 !important
+}
+
+.Button {
+  background: #24b47e;
+  border-radius: 2px;
+	color: white;
+	font-weight: bold;
+  font-size: 14px;
+  line-height: 100%;
+  height: 40px;
+	padding: 0 10px;
+	cursor: pointer;
+}
+
+.flex{
+	display: flex;
+}
+
+.inline-flex{
+	display: inline-flex;
+}
+
+.block{
+	display: block
+}
+
+.inline-block{
+	display: inline-block;
+}
+
+.flex1{
+	flex: 1;
+}
+
+.relative{
+	position: relative;
+}
+
+.absolute{
+	position: absolute;
+}

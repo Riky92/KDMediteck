@@ -1,0 +1,66 @@
+<div class="main">
+	<div class="container">
+		<h1 class="title">SITUAZIONE ATTUALE</h1>
+		<p class="body">{{user.situazione_attuale}}</p>
+		<h1 class="title">WORKING EXPERIENCES</h1>
+		<div class="body">
+			<ng-container *ngFor="let experience of user.working_experencies">
+				<span class="square"></span>
+				<span class="company">{{experience.id}}</span>
+				<ul>
+					<li>
+						<span class="infoExperience">Periodo:</span>
+						<span>{{experience.timeWork}}</span>
+					</li>
+					<li>
+						<span class="infoExperience">Ruolo:</span>
+						<span>{{experience.role}}</span>
+					</li>
+					<li>
+						<span class="infoExperience">Posizione:</span>
+						<span>{{experience.position}}</span>
+					</li>
+					<li>
+						<span class="infoExperience">Principali attività:</span>
+						<span>{{experience.main_activities}}</span>
+					</li>
+				</ul>
+			</ng-container>
+		</div>
+		<h1 class="title">FORMAZIONE</h1>
+		<div class="body">
+			<ng-container *ngFor="let formazione of user.formazione;let i = index">
+					<span class="square"></span>
+					<span class="company">{{formazione.tipo}}</span>
+				<ul>
+					<li>
+							<span *ngIf="i === user.formazione.length - 1" class="infoExperience">Scuola:</span>
+							<span *ngIf="i !== user.formazione.length - 1" class="infoExperience">Università:</span>
+							<span>{{formazione.id}}</span>
+						</li>
+					<li>
+						<span class="infoExperience">Data:</span>
+						<span>{{formazione.data}}</span>
+					</li>
+					<li>
+						<span class="infoExperience">Luogo:</span>
+						<span>{{formazione.luogo}}</span>
+					</li>
+					<li>
+						<span class="infoExperience">Tesi:</span>
+						<span>{{formazione.tesi}}</span>
+					</li>
+					<li>
+						<span class="infoExperience">Voto:</span>
+						<span>{{formazione.voto}}</span>
+					</li>
+				</ul>
+			</ng-container>
+		</div>
+		<h1 class="title">ABILITA'</h1>
+		<div class="body">
+			{{user.skills}}
+		</div>
+	</div>
+</div>
+
