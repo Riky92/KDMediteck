@@ -1,7 +1,7 @@
 
 .main{
 	max-width: 75%;
-	@media only screen and (max-width: 375px) {
+	@media only screen and (max-width: 415px) {
 		max-width: 100%;
 		margin-top: -70px;
 	}
@@ -9,7 +9,7 @@
 	justify-content: center;
 	margin-right: auto;
 	.container{
-		@media only screen and (max-width: 375px) {
+		@media only screen and (max-width: 415px) {
 			padding: 5px;
 			padding-right: 10px;
 		}
@@ -19,14 +19,18 @@
 			color: #24b47e;
 			margin-top: 20px;
 			margin-bottom: 20px;
-			@media only screen and (max-width: 375px) {
+			@media only screen and (max-width: 415px) {
 				margin-top: 10px;
 				font-size: 16px;
 			}
 			font-size: 20px;
+			&.app{
+				display: flex;
+				align-items: center;
+			}
 		}
 		.body{
-			@media only screen and (max-width: 375px) {
+			@media only screen and (max-width: 415px) {
 				font-size: 14px;
 			line-height: 24px;
 			padding-bottom: 0;
@@ -43,7 +47,7 @@
 			margin-top: 15px;
 			margin-bottom: 15px;
 			font-size: 18px;
-			@media only screen and (max-width: 375px) {
+			@media only screen and (max-width: 415px) {
 				margin-top: 10px;
 				margin-bottom: 10px;
 				font-size: 15px;
@@ -94,4 +98,10 @@
 	width: 100%;
 	text-align: center;
 
+}
+
+.sizeLogo{
+	height: 35px;
+	width: 45px;
+	margin-left: 20px;
 }

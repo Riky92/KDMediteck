@@ -5,7 +5,7 @@
 // }
 
 .main{
-	@media only screen and (max-width: 375px) {
+	@media only screen and (max-width: 415px) {
 		max-width: 100%
 	}
 	max-width: 75%;
@@ -14,7 +14,7 @@
 	margin-right: auto;
 	.title{
 		display: block;
-		@media only screen and (max-width: 375px) {
+		@media only screen and (max-width: 415px) {
 			font-size: 20px;
 			margin-bottom: 0
 		}
@@ -26,7 +26,7 @@
 
 .containerHeader{
 	height: calc(190px * 4);
-	@media only screen and (max-width: 375px) {
+	@media only screen and (max-width: 415px) {
 		height: calc(190px * 3);
 		transform: skewY(-15deg);
 	}
@@ -63,7 +63,8 @@
 	position: relative;
 	z-index: 1;
 	width: 250px;
-	@media only screen and (max-width: 375px) {
+	height: 250px;
+	@media only screen and (max-width: 770px) {
 		width: 100px;
 		height: 100px;
 	}
@@ -88,7 +89,7 @@
 
 .itemUser{
 	display: block;
-	@media only screen and (max-width: 375px) {
+	@media only screen and (max-width: 415px) {
 		padding-top: 0;
 		flex: 2;
     margin-left: 30px;
@@ -102,7 +103,7 @@
 
 .main{
 	max-width: 75%;
-	@media only screen and (max-width: 375px) {
+	@media only screen and (max-width: 415px) {
 	max-width: 100%
 	}
 	margin-left: auto;
@@ -117,7 +118,7 @@
 		top: 10px;
 		left: 0;
 		right: 0;
-		@media only screen and (max-width: 375px) {
+		@media only screen and (max-width: 415px) {
 			height: 20px;
 		}
 		align-items: center;
@@ -127,7 +128,7 @@
 			flex: 1;
 			width: 100%;
 			margin-left: 50px;
-			@media only screen and (max-width: 375px) {
+			@media only screen and (max-width: 415px) {
 				margin-left: 20px;
 				font-size: 12px;
 			}
@@ -139,11 +140,11 @@
 			flex: 1;
 			display: inline-flex;
 			width: 100%;
-			@media only screen and (max-width: 375px) {
+			@media only screen and (max-width: 415px) {
 				flex: 2;
 			}
 			.menuItem{
-				@media only screen and (max-width: 375px) {
+				@media only screen and (max-width: 415px) {
 					font-size: 10px;
 					padding: 5px;
 				}
@@ -154,7 +155,7 @@
 			}
 		}
 	.infoUser{
-		@media only screen and (max-width: 375px) {
+		@media only screen and (max-width: 415px) {
 			margin-top: 20px;
 			}
 		justify-content: center;
@@ -166,7 +167,7 @@
 			&.principaliSX{
 				margin-top: 30px;
 				width: 60%;
-				@media only screen and (max-width: 375px) {
+				@media only screen and (max-width: 415px) {
 					width: 100%;
 					margin-top: 15px;
 				}
@@ -174,7 +175,7 @@
 			&.principaliDX{
 				margin-top: 30px;
 				width: 40%;
-				@media only screen and (max-width: 375px) {
+				@media only screen and (max-width: 415px) {
 					width: 100%;
 					margin-top: 0;
 				}
@@ -186,7 +187,7 @@
 
 .subtitle{
 	color: white;
-	@media only screen and (max-width: 375px) {
+	@media only screen and (max-width: 415px) {
 		font-size: 14px;
 		line-height: 20px;
 		margin-top: 0

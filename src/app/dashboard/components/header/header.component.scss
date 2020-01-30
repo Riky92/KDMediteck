@@ -1,6 +1,6 @@
 .main{
 	max-width: 75%;
-	@media only screen and (max-width: 375px) {
+	@media only screen and (max-width: 415px) {
 		max-width: 100%;
 	}
 	margin-left: auto;
@@ -10,7 +10,7 @@
 	position: relative;
 	z-index: 500;
 	.header{
-		@media only screen and (max-width: 375px) {
+		@media only screen and (max-width: 415px) {
 			height: 20px
 		}
 		height: 72px;
@@ -25,7 +25,7 @@
 		.containerLogo{
 			flex: 1;
 			width: 100%;
-			@media only screen and (max-width: 375px) {
+			@media only screen and (max-width: 415px) {
 				margin-left: 10px;
 				font-size: 12px;
 			}
@@ -34,7 +34,7 @@
 			color: white;
 		}
 		.menu{
-			@media only screen and (max-width: 375px) {
+			@media only screen and (max-width: 415px) {
 				flex: 2;
 			}
 			flex: 1;
@@ -42,7 +42,7 @@
 			width: 100%;
 			.item{
 				font-size: 16px;
-				@media only screen and (max-width: 375px) {
+				@media only screen and (max-width: 415px) {
 					font-size: 10px;
 					padding: 3px;
 				}
@@ -59,7 +59,7 @@
 	}
 
 	.intro{
-		@media only screen and (max-width: 375px) {
+		@media only screen and (max-width: 415px) {
 			margin-top: 20px;
 		}
 		margin-top: 100px;
@@ -68,20 +68,20 @@
 		.containerIntro{
 			display: block;
 			width: 100%;
-			@media only screen and (max-width: 375px) {
+			@media only screen and (max-width: 415px) {
 				padding: 18px;
 			}
 			padding: 30px;
 			.title{
 				color: white;
-				@media only screen and (max-width: 375px) {
+				@media only screen and (max-width: 415px) {
 					font-size: 18px;
 				}
 				font-size: 24px;
 			}
 			.subtitle{
 				color: white;
-				@media only screen and (max-width: 375px) {
+				@media only screen and (max-width: 415px) {
 					font-size: 14px;
 				line-height: 20px;
 				}
@@ -96,7 +96,7 @@
 			width: 100%;
 			.photo{
 				width: 400px;
-				@media only screen and (max-width: 375px) {
+				@media only screen and (max-width: 415px) {
 					width: 150px;
 					margin-right: 20px;
 				}
@@ -108,7 +108,7 @@
 }
 
 .containerHeader{
-	@media only screen and (max-width: 375px) {
+	@media only screen and (max-width: 415px) {
 		height: 430px;
 		transform: skewY(-15deg);
 	}
