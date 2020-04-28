@@ -40,4 +40,12 @@ export class BodyComponent implements OnChanges {
 
  }
 
+ goToPlayStore() {
+  window.open('https://play.google.com/store/apps/details?id=com.kdmediteck.kidneydose');
+ }
+
+ goToPresentation(){
+   window.open('https://prezi.com/view/6jtOk1U6bJobBVmqSsLk/');
+ }
+
 }

@@ -105,3 +105,28 @@
 	width: 45px;
 	margin-left: 20px;
 }
+
+.riferimentiSize{
+	@media only screen and (max-width: 415px) {
+		max-width: 200px;
+	}
+	max-width: 250px;
+	cursor: pointer;
+}
+
+.containerRiferimenti{
+	display: inline-flex;
+	justify-content: space-around;
+	@media only screen and (max-width: 415px) {
+		width: 100%;
+	}
+	width: 80%;
+	align-items: center;
+	padding: 10px;
+}
+
+.riferimento{
+	font-size: 18px;
+	font-weight: bold;
+	color: #4553ff;
+}
